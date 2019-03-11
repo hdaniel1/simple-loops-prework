@@ -35,6 +35,7 @@ def while_iterator(number_of_times)
   while counter < number_of_times
     puts phrase
     counter += 1
+  end
 end
 
 def until_iterator(number_of_times)
@@ -45,6 +46,7 @@ def until_iterator(number_of_times)
   until counter == number_of_times
     puts phrase
     counter += 1
+  end
 end
 
 def for_iterator(number_of_times)
@@ -52,5 +54,7 @@ def for_iterator(number_of_times)
   # remember that `for` requires a range of numbers. How can we turn our number into a range?
 
   phrase = "Welcome to Flatiron School's Web Development Course!"
-
+  for 1..number_of_times do
+    puts phrase
+  end
 end
